@@ -27,7 +27,7 @@ f1.seek(0)
 
 # read(n)读取n个字符
 str1 = f1.read(11)
-#str2= f1.read(10)
+# str2= f1.read(10)
 
 print("str1=",  str1)
 
@@ -45,7 +45,7 @@ linelist = f1.readlines()
 print(linelist)
 
 # 文件每次打开后应该及时关闭
-if  f1.closed == False:
+if not f1.closed:
     f1.close()
 
 print(f1.closed)
