@@ -19,5 +19,5 @@ dictParam(x = 1, y = 2)
 
 # lambda表达式格式  lamdba args1, xargs2, ...xrgsN : body
 # 以lambda 开始，以冒号分隔参数列表与运算表达式
-sum = lambda  x, y : x + y
-print(sum(1,2))
+getadd = lambda x, y: x + y
+print(getadd(1, 2))
