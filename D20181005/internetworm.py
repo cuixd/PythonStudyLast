@@ -28,7 +28,7 @@ print(response.getcode())
 print(response.geturl())
 
 
-# 降低至栏的url复制出来后，其中的中文空格或者特殊字符等会被编码，导致无法识别
+# 将地址栏的url复制出来后，其中的中文空格或者特殊字符等会被编码，导致无法识别
 url = "https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=%E7%8E%8B%E8%80%85%E8%" \
       "8D%A3%E8%80%80&rsv_pq=9f4415590004e9a4&rsv_t=8b23ED%2B3s2IztpC4eGqDkaQq%2F%2FXSxrYxIFRyfWI" \
       "tUvg%2BmiQ%2F%2FJV1NkdZX%2Fw&rqlang=cn&rsv_enter=1&rsv_sug3=16&rsv_sug1=11&rsv_sug7=101"
