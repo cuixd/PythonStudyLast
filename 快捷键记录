@@ -1,0 +1,9 @@
+复制一行    ctrl + D
+删除一行    ctrl + Y
+光标换行    shift + 回车
+批量注释    ctrl + /
+批量缩进    tab
+取消缩进    shift + tab
+替换  ctrl + r
+代码折叠    ctrl + -
+代码展开    ctrl + +
