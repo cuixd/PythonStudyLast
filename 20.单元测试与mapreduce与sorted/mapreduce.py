@@ -1,6 +1,7 @@
 from functools import reduce
 
 '''
+author: cuixd
 python的map和reduce内建函数，其中reduce方法需要import
 map(func, iter)
 map方法两个参数，第一个是一个函数，其实就是map分发需要使用的处理逻辑
