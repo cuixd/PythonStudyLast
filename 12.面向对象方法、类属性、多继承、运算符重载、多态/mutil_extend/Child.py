@@ -16,8 +16,8 @@ class Child(Father, Mather):
 
     def __str__(self):
 
-        return "我姓%s,名%s,我的父亲叫%s%s,母亲叫%s" %(self.surname, self.name,
-                                            self.surname, self.getFname(), self.getMname())
+        return "我姓%s,名%s,我的父亲叫%s%s,母亲叫%s" % (self.surname, self.name,
+                                             self.surname, self.getFname(), self.getMname())
 
 
 if __name__ == "__main__":
