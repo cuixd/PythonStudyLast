@@ -15,6 +15,6 @@ Hobbie : %s
 ''' % (name, name, int(age), job, hobbie)
 
 print(msg)
-user ={'c':1}
+user = {'c': 1}
 
 print(user)

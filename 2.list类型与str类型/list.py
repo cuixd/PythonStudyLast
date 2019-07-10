@@ -20,3 +20,5 @@ while i < len(list2):
 
     i += 1
 print(max, sec)
+
+print(list2)
