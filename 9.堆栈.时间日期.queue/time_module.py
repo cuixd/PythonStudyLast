@@ -28,27 +28,27 @@ print(t6)
 t7 = time.ctime(t1)
 print(t7)
 
-#将一个时间元组转换成指定格式的日期时间字符串，如果时间元组不指定，则获取当前时间
+# 将一个时间元组转换成指定格式的日期时间字符串，如果时间元组不指定，则获取当前时间
 t8 = time.strftime("%Y%m%d %H%M%S")
 print("t8:"+t8)
 
 # 将给定的日期时间格式字符串转换为 时间元组
 t9 = time.strptime(t8, "%Y%m%d %H%M%S")
-print("t9:",t9)
+print("t9:", t9)
 
-#print(time.ctime())
+# print(time.ctime())
 
 # 睡眠N秒
 # time.sleep(3)
 
-#print(time.ctime())
+# print(time.ctime())
 
-t10 = time.clock()
+t10 = time.perf_counter()
 print(t10)
 sum = 0
 for i in range(100000000):
    sum += i
 
 
-t11 = time.clock()
+t11 = time.perf_counter()
 print(t11)

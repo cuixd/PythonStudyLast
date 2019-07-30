@@ -5,7 +5,7 @@
 class Person:
 
     # 类属性，如果无需指定类属性，可以直接在__init__方法中定义对象属性
-    name = ""
+    name = "类属性name"
     age = 0
 
     # 定义构造方法，在构造方法中定义成员属性并赋值
@@ -24,7 +24,7 @@ class Person:
         print("My name is "+ self.name)
 
     def eat(self,food):
-        print("eat "+ food)
+        print(self.name + " eat "+ food)
 
     # 析构函数，实例销毁时被调用，比如程序结束时、手动del 对象变量名、方法内实例化的对象当方法执行结束时 都会触发析构函数
     def __del__(self):
@@ -53,3 +53,4 @@ p2.eat("香蕉")
 # p3 = Person()
 print(p1)
 print(p2)
+print(Person.name, Person.age)

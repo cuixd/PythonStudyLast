@@ -1,6 +1,6 @@
 from types import MethodType # 为实例添加方法需要用到
 
-class Person:
+class Person(object):
 
     # 特殊参数，限制类的实例允许被定义的属性或方法
     __slots__ = ("name", "age", "speak")

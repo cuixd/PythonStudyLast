@@ -20,7 +20,7 @@ class MyTest(unittest.TestCase):
     def test_mySum(self):
 
         # 进行等值断言，按照方法的预期结果给出预定结果，以及不符合预期结果的返回信息
-        self.assertEqual(mySum(1, 2), 3, "加法函数mySum逻辑有误")
+        self.assertEqual(mySum(5, 4), 9, "加法函数mySum逻辑有误")
 
 
 if __name__ == "__main__":

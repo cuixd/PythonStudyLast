@@ -1,5 +1,5 @@
 
-'''
+"""
 打开一个文件open方法
 open(path,mode,encoding=)
 path 文件的绝对路径
@@ -11,7 +11,7 @@ mode 打开文件的方式:
     a   追加方式打开
 encoding=   指定以哪种字符集打开，因该参数并不是参数列表的第三个参数，
     所以要以k=v形式指定
-'''
+"""
 f1 = open("/PycharmProjects/PythonStudy/6.函数.装饰器.偏函数.异常与文件读取/info.txt", 'r', encoding='utf8')
 
 # read()读取整个文件

@@ -1,6 +1,6 @@
 
 
-class Person:
+class Person(object):
 
     # 类属性，定义在类体中的属性，可通过类名直接访问
     country = "China"

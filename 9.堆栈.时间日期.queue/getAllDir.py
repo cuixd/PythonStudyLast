@@ -15,7 +15,7 @@ import collections
 
 
 # 深度遍历
-def getAllDirByStackDeep(dir):
+def getalldirbystackdeep(dir):
 
     # 使用列表pop()模拟栈
     stack = []
@@ -23,44 +23,45 @@ def getAllDirByStackDeep(dir):
 
     while len(stack) != 0:
 
-        #取出最后一个进栈的数据
-        curDir = stack.pop()
-        #print("目录:"+curDir)
-        fileList = os.listdir(curDir)
-        for fileName in fileList:
-            absPath = os.path.join(curDir,fileName)
-            if os.path.isdir(absPath):
-                print("目录:"+absPath)
-                stack.append(absPath)
+        # 取出最后一个进栈的数据
+        curdir = stack.pop()
+        # print("目录111:"+curdir)
+        filelist = os.listdir(curdir)
+        for filename in filelist:
+            abspath = os.path.join(curdir, filename)
+            if os.path.isdir(abspath):
+                print("目录:"+abspath)
+                stack.append(abspath)
             else:
-                print("文件:"+absPath)
+                print("文件:" + abspath)
+
 
 # 广度遍历
-def getAllDirByQueueScope(dir):
+def getalldirbyqueuescope(dir):
 
-    #使用collections模块产生一个队列
+    # 使用collections模块产生一个队列
     queue = collections.deque()
     queue.append(dir)
 
     while len(queue) != 0:
         # 取出最先进栈的数据
-        curDir = queue.popleft()
+        curdir = queue.popleft()
 
-        fileList = os.listdir(curDir)
-        for fileName in fileList:
-            absPath = os.path.join(curDir, fileName)
-            if os.path.isdir(absPath):
-                print("目录:"+absPath)
-                queue.append(absPath)
+        filelist = os.listdir(curdir)
+        for filename in filelist:
+            abspath = os.path.join(curdir, filename)
+            if os.path.isdir(abspath):
+                print("目录:"+abspath)
+                queue.append(abspath)
             else:
-                print("文件:"+absPath)
+                print("文件:"+abspath)
 
 '''
 两个方法的代码及其类似，唯一的区别在于循环取出时，一个是取出最右边的，也就是最后的数据；另一个是取出最左边的，也就是最早的数据
 '''
 
-getAllDirByStackDeep("/Users/cuixiaodong/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化/1")
+getalldirbystackdeep("/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化/1")
 
 print("#######################")
-getAllDirByQueueScope("/Users/cuixiaodong/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化/1")
+getalldirbyqueuescope("/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化/1")
 

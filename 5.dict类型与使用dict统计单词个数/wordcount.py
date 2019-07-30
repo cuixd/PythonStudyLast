@@ -4,7 +4,7 @@ wlist = str.split(" ")
 wcount = {}
 
 for v in wlist:
-    if wcount.get(v) == None:
+    if wcount.get(v) is None:
         wcount[v] = 1
     else:
         wcount[v] += 1

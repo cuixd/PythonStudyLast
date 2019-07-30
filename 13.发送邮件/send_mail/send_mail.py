@@ -39,7 +39,7 @@ receiver = []
 # receiver.append("bo.zhang@xinguang.com")
 # receiver.append("panxia.li@xinguang.com")
 # receiver.append("liyuan@xinguangnet.com")
-receiver.append("cuixd@xinguangnet.com")
+receiver.append("cuixd_final@sina.com")
 
 print(receiver)
 

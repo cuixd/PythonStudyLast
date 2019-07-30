@@ -4,7 +4,7 @@ import itertools
 组合
 '''
 
-l1 = list(itertools.combinations("abcd",1))
+l1 = list(itertools.combinations("abcd",3))
 
 print(l1)
 print(len(l1))

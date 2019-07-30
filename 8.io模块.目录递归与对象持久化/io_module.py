@@ -1,4 +1,4 @@
-import os.path  #操作系统模块
+import os.path  # 操作系统模块
 
 # 获取操作系统的类型与详细信息
 print(os.name)
@@ -11,7 +11,7 @@ print(env)
 
 # 环境变量可以认为是一个dict类型，可以进行遍历
 for name in env.keys():
-    print(name,env.get(name))
+    print(name, env.get(name))
 
 # 获取当前相对路径  其实就是 .
 print(os.curdir)
@@ -20,7 +20,7 @@ print(os.curdir)
 print(os.getcwd())
 
 # 获取路径下的全部文件，列表形式
-dirlist = os.listdir("/Users/cuixiaodong/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化")
+dirlist = os.listdir("/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化")
 print(type(dirlist))
 print(dirlist)
 
@@ -29,21 +29,21 @@ print(dirlist)
 # 创建目录，当前目录下创建
 os.mkdir("cuixd")
 # 绝对路径下创建
-os.mkdir("/Users/cuixiaodong/PycharmProjects/PythonStudy/cuixd")
+os.mkdir("/PycharmProjects/PythonStudy/cuixd")
 
 # 删除目录，当前路径下
 os.rmdir("cuixd")
 # 删除目录，绝对路径
-os.rmdir("/Users/cuixiaodong/PycharmProjects/PythonStudy/cuixd")
+os.rmdir("/PycharmProjects/PythonStudy/cuixd")
 
-#级联创建目录
-# os.makedirs("/Users/cuixiaodong/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化/cuixd1/1/2")
+# 级联创建目录
+# os.makedirs("/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化/cuixd1/1/2")
 
 
-#os.mkdir("test")
+# os.mkdir("test")
 
 # 查看文件状态信息
-#print(os.stat("test"))
+# print(os.stat("test"))
 
 # 执行系统命令
 os.system("ls -l")
@@ -55,7 +55,7 @@ os.system("ls -l")
 print(os.path.abspath("."))
 
 # 拼接路径，第二个参数之后的都表示要拼接的部分
-jp = os.path.join("/Users","cuixiaodong/Downloads","崔晓东")
+jp = os.path.join("/Users", "cuixiaodong/Downloads", "崔晓东")
 print(jp)
 
 subpath = "/Users/cuixiaodong/Downloads/崔晓东.txt"
@@ -66,7 +66,7 @@ print(sp)
 # 拆分文件名与扩展名，获得元组类型
 print(os.path.splitext("崔晓东.txt"))
 
-path1 = "/Users/cuixiaodong/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化"
+path1 = "/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化"
 # 判断是否是目录或者文件
 print(os.path.isdir(path1))
 print(os.path.isfile(path1))
@@ -75,17 +75,18 @@ print(os.path.isfile(path1))
 print(os.path.exists(path1))
 
 # 获取文件的大小，单位是字节
-path2 = "/Users/cuixiaodong/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化/object_io.py"
+path2 = "/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化/object_io.py"
 print(os.path.getsize(path2))
 
 # 获取文件的目录及文件名
 print(os.path.dirname(path2))
 print(os.path.basename(path2))
 
-#os.makedirs("/Users/cuixiaodong/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化/1/2/3")
+# os.makedirs("/Users/cuixiaodong/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化/1/2/3")
+
 
 # 递归列出目录
-def list_dir(dir,level):
+def list_dir(dir, level):
     if os.path.exists(dir):
         print("****" * level+dir)
         if os.path.isdir(dir):
@@ -94,12 +95,13 @@ def list_dir(dir,level):
             for file in dirlist:
                 absfile = os.path.join(dir,file)
 
-                list_dir(absfile,level)
+                list_dir(absfile, level)
 
     else:
-        print(dir,":Directory or file is not exist")
+        print(dir, ":Directory or file is not exist")
 
-list_dir("/Users/cuixiaodong/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化",0)
+
+list_dir("/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化", 0)
 
 
 # 递归求和1+2+3+。。。N
@@ -108,5 +110,6 @@ def getsum(n):
         return n + getsum(n - 1)
     else:
         return n
+
 
 print(getsum(1))

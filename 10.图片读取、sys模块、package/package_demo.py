@@ -1,5 +1,5 @@
 # 引入自定义的包中的模块
-import D20180827.getAllDir
+import 9.堆栈.时间日期.queue.getAllDir
 
 '''
 包的本质是一个目录，但是在目录的基础上有两点要求：
@@ -7,7 +7,8 @@ import D20180827.getAllDir
 2、包中必须要包含一个__init__.py文件，使用PyCharm来创建一个Package时会自动创建该文件，
     如果是自己手动添加Package，则需要手动创建该文件，作用是用来限定包中的哪些模块
     可以被其他程序引入，默认为空，表示包中的全部模块都可被引入
+由于包名被改成了不符合规则的数字开头的标识，因此报错，需要时可修改对应的包名
 '''
 
 # 调用模块中的方法
-D20180827.getAllDir.getAllDirByQueueScope("/Users/cuixiaodong/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化/1")
+9.堆栈.时间日期.queue.getAllDir.getalldirbyqueuescope("/PycharmProjects/PythonStudy/8.io模块.目录递归与对象持久化/1")

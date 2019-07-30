@@ -1,10 +1,11 @@
-def getMax(a, b):
+def getmax(a, b):
     if a > b:
         return a
     else:
         return b
 
-a = getMax(4,7)
-print(a)
+
+res = getmax(4, 7)
+print(res)
 
 
